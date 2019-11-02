@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Clock from './Clock';
 
 // function App() {
 //   return (
@@ -23,8 +24,6 @@ import './App.css';
 //   );
 // }
 
-let time = new Date().toLocaleString();
-
 class App extends Component {
   render() {
     return (
@@ -36,9 +35,7 @@ class App extends Component {
         <p className="App-intro">
           Hi, it's {this.props.name}!
         </p>
-        <p className="App-clock">
-          The time is {time}.
-        </p> 
+        <Clock></Clock>
       </div>
     );
   }
