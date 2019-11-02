@@ -4,6 +4,7 @@ import React from "react";
   class Clock extends React.Component {
     constructor(props) {
       super(props);
+      this.handleClick =  this.handleClick.bind(this);
       this.state = {
         time: new Date().toLocaleString()
       };
@@ -29,11 +30,22 @@ import React from "react";
       });
     }
 
+    handleClick(event) {
+      // console.log(this);
+      
+      // console.log(event);
+      
+    }
+
     render() {
       return (
+        <div>
         <p className="App-clock">
           The time is {this.state.time}.
         </p>
+
+        <button onClick={this.handleClick(this)}>Click me</button>
+        </div>
       );
     }
 
