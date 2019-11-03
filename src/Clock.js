@@ -43,8 +43,6 @@ import React from "react";
         <p className="App-clock">
           The time is {this.state.time}.
         </p>
-
-        <button onClick={this.handleClick(this)}>Click me</button>
         </div>
       );
     }
